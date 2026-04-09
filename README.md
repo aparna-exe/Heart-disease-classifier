@@ -10,6 +10,12 @@ The application features a custom GUI built with **Tkinter**, designed for ease 
 ![Diagnostic Interface](screenshots/Diagnostic%20interface.png)
 *The interface allows for rapid data entry and provides immediate visual feedback on the diagnostic result.*
 
+## 🩺 Diagnostic Output
+When the "Results" button is triggered, the system calculates the posterior probability using the Naïve Bayes engine and provides a clear decision support message.
+
+![Diagnostic Result](screenshots/Results.png)
+*Example of the system identifying a high-risk case with a high posterior probability score.*
+
 ## 📊 Performance & Evaluation
 To ensure reliability, the system includes a built-in performance reporting module. The model is evaluated on a test split to measure its accuracy and sensitivity.
 
@@ -27,4 +33,3 @@ The following metrics represent the model's predictive power:
 
 ![Performance Graph](screenshots/Performance%20graph.png)
 *Visual summary of the model's accuracy, precision, and recall scores.*
-
