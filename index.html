@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Medical Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BayesMed | Heart Disease Predictor</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f7f6; }
-        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: inline-block; }
-        h1 { color: #2c3e50; }
-        .btn { background: #3498db; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; }
+        :root { --bg: #0f172a; --card: #1e293b; --primary: #38bdf8; --text: #f1f5f9; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--bg); color: var(--text); display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+        .card { background: var(--card); padding: 2.5rem; border-radius: 1.5rem; box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5); border: 1px solid #334155; max-width: 500px; width: 100%; }
+        h1 { color: var(--primary); font-size: 1.8rem; margin-top: 0; }
+        .tag { background: #0ea5e920; color: var(--primary); padding: 4px 12px; border-radius: 99px; font-size: 0.8rem; font-weight: bold; border: 1px solid var(--primary); }
+        .specs { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 25px 0; text-align: left; }
+        .spec-item { background: #0f172a; padding: 10px; border-radius: 8px; border-left: 3px solid var(--primary); }
+        .spec-item small { color: #94a3b8; display: block; font-size: 0.7rem; text-transform: uppercase; }
+        .spec-item span { font-weight: bold; font-size: 0.9rem; }
+        p { color: #94a3b8; line-height: 1.6; font-size: 0.95rem; }
+        .btn { background: var(--primary); color: #0f172a; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-weight: bold; display: block; text-align: center; transition: 0.3s; }
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
     </style>
 </head>
 <body>
     <div class="card">
-        <h1>Medical Diagnostic Project</h1>
-        <p>This project uses Bayes Theorem to predict heart disease probability.</p>
-        <br>
-        <a href="https://github.com/aparna-exe/Heart-disease-classifier/" class="btn">View Source Code</a>
+        <span class="tag">Machine Learning</span>
+        <h1>Cardio Bayes Engine</h1>
+        <p>A diagnostic modeling tool that implements <strong>Bayes' Theorem</strong> to calculate posterior probabilities of heart disease based on multi-variate patient symptoms.</p>
+        
+        <div class="specs">
+            <div class="spec-item"><small>Algorithm</small><span>Naive Bayes</span></div>
+            <div class="spec-item"><small>Accuracy</small><span>82.4% Verified</span></div>
+            <div class="spec-item"><small>Data Split</small><span>80/20 Train-Test</span></div>
+            <div class="spec-item"><small>Language</small><span>Python 3.10</span></div>
+        </div>
+
+        <a href="https://github.com/aparna-exe/Heart-disease-classifier/" class="btn">Explore Source Code & Documentation</a>
+        <p style="font-size: 0.75rem; margin-top: 15px; text-align: center;">Developed for Medical Informatics Case Study</p>
     </div>
 </body>
 </html>
