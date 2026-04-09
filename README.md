@@ -1,24 +1,24 @@
 # Heart Disease Diagnostic System 🩺
 A Python-based clinical decision support tool that utilizes the **Gaussian Naïve Bayes** algorithm to predict the probability of heart disease based on patient vitals.
 
-## 🛠️ System Overview
-This project demonstrates the application of Bayesian inference in healthcare. By analyzing features like Age, Blood Pressure, and Cholesterol, the model calculates a posterior probability to assist medical professionals in identifying high-risk patients.
+## ystem Overview
+This project demonstrates the application of Bayesian inference in healthcare. By analyzing features like Age, Blood Pressure, and Cholesterol, the model calculates a posterior probability to assist medical professionals in identifying highrisk patients.
 
-## 🖥️ User Interface & Experience
+## User Interface & Experience
 The application features a custom GUI built with **Tkinter**, designed for ease of use in a clinical setting. Users can input patient data and receive an instant diagnostic recommendation backed by a probability score.
 
 ![Diagnostic Interface](screenshots/Diagnostic%20interface.png)
 
 *The interface allows for rapid data entry and provides immediate visual feedback on the diagnostic result.*
 
-## 🩺 Diagnostic Output
+## Diagnostic Output
 When the "Results" button is triggered, the system calculates the posterior probability using the Naïve Bayes engine and provides a clear decision support message.
 
 ![Diagnostic Result](screenshots/Results.png) 
 
 *Example of the system identifying a high-risk case with a high posterior probability score.*
 
-## 📊 Performance & Evaluation
+## Performance & Evaluation
 To ensure reliability, the system includes a built-in performance reporting module. The model is evaluated on a test split to measure its accuracy and sensitivity.
 **Note on Dataset Scale:** Since this is a curated demonstration dataset of 18 records, the 20% test split consists of 4 total samples. The **2 and 0 results** indicate that the model perfectly classified all 4 test cases. While the results are nearly equal to 1 (100% accuracy), this is a "Proof of Concept" showing that the Gaussian Naïve Bayes logic correctly identified the distinct patterns in our clinical data without error.
 
